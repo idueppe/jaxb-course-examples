@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Kurs>
+	<Titel>Java Swing</Titel>
+	<Modul Typ="notwendig">
+		<Ueberschrift>Einleitung</Ueberschrift>
+	</Modul>
+	<Modul Typ="notwendig">
+		<Ueberschrift>Standardkomponenten</Ueberschrift>
+	</Modul>
+	<Modul Typ="optional">
+		<Ueberschrift>Java2D</Ueberschrift>
+	</Modul>
+</Kurs>

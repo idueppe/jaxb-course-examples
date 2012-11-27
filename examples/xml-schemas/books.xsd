@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0"
+	targetNamespace="http://www.crowdcode.de/schema/spring/books"
+	xmlns:tns="http://www.crowdcode.de/schema/spring/books" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="author" type="tns:author" />
+
+	<xs:element name="book" type="tns:book" />
+
+	<xs:complexType name="book">
+		<xs:sequence>
+			<xs:element name="isbn" type="xs:string" minOccurs="0" />
+			<xs:element name="title" type="xs:string" minOccurs="0" />
+			<xs:element name="edition" type="xs:int" />
+			<xs:element name="pages" type="xs:int" />
+			<xs:element name="published" type="xs:string" minOccurs="0" />
+			<xs:element name="authors" type="tns:authors" minOccurs="0" />
+			<xs:element name="publisher" type="tns:publisher" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="authors">
+		<xs:sequence>
+			<xs:element name="author" type="tns:author" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="author">
+		<xs:sequence>
+			<xs:element name="authorId" type="xs:long" minOccurs="0" />
+			<xs:element name="name" type="xs:string" minOccurs="0" />
+			<xs:element name="email" type="xs:string" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="publisher">
+		<xs:sequence>
+			<xs:element name="address" type="tns:address" minOccurs="0" />
+			<xs:element name="name" type="xs:string" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="address">
+		<xs:sequence>
+			<xs:element name="address" type="xs:string" minOccurs="0" />
+			<xs:element name="city" type="xs:string" minOccurs="0" />
+			<xs:element name="state" type="xs:string" minOccurs="0" />
+			<xs:element name="zip" type="xs:string" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
+

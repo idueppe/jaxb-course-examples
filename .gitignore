@@ -4,3 +4,4 @@ jaxb-examples.iml
 .project
 .settings
 .classpath
+*.iml
