@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Ueberschrift">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Einleitung"/>
+                <xs:enumeration value="Java2D"/>
+                <xs:enumeration value="Standardkomponenten"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="Titel">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Java Swing"/>
+                <xs:enumeration value="Apache Maven"/>
+                <xs:enumeration value="JAXB"/>
+                <xs:enumeration value="JavaServer Faces"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="Modul">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Ueberschrift"/>
+            </xs:sequence>
+            <xs:attribute name="Typ" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="notwendig"/>
+                        <xs:enumeration value="optional"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Jahre">
+        <xs:simpleType>
+            <xs:list itemType="xs:integer"></xs:list>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="Kurs">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Titel" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="Modul" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element ref="Jahre" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

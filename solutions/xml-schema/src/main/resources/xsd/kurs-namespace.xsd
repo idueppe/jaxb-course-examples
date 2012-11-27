@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:course="http://www.crowdcode.de/kurs"
+    targetNamespace="http://www.crowdcode.de/kurs">
+	<xs:complexType name="KursType">
+		<xs:sequence>
+			<xs:element name="Titel" type="xs:string"/>
+			<xs:element name="Modul" type="course:ModulType" maxOccurs="unbounded"/>
+            <xs:element name="Jahre">
+                <xs:simpleType>
+                    <xs:list itemType="xs:integer"></xs:list>
+                </xs:simpleType>
+            </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ModulType">
+		<xs:sequence>
+			<xs:element name="Ueberschrift" type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="Typ" type="xs:string"/>
+	</xs:complexType>
+	<xs:element name="Kurs" type="course:KursType"/>
+</xs:schema>

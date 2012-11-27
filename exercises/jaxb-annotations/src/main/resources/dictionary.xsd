@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.dueppe.com/course/dictionary" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" version="1.0" xmlns:tns="http://www.dueppe.com/course/dictionary" xmlns:xs="http://www.w3.org/2001/XMLSchema" jaxb:version="2.0">
+	<xs:element name="dictionary" type="tns:DictionaryType"/>
+	<xs:complexType name="DictionaryType">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="album" type="tns:AlbumType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AlbumType">
+		<xs:sequence>
+			<xs:element name="discId" type="xs:string" minOccurs="1"/>
+			<xs:element name="artist" type="xs:string" minOccurs="1"/>
+			<xs:element name="name" type="xs:string" minOccurs="1"/>
+			<xs:element name="genre" type="xs:string" minOccurs="1"/>
+			<xs:element name="year" type="xs:int" minOccurs="1"/>
+			<xs:element maxOccurs="unbounded" name="track" type="tns:TrackType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TrackType">
+		<xs:sequence>
+			<xs:element name="title" type="xs:string"/>
+			<xs:element name="trackNo" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

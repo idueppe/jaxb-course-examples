@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://schema.crowdcode.de/StatisticsSchema"
+	xmlns:tns="http://schema.crowdcode.de/StatisticsSchema"
+	elementFormDefault="qualified">
+	
+
+    <complexType name="ArrayType">
+    	<sequence>
+    		<element name="number" type="int" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="FindMeanRequestType">
+    	<sequence>
+    		<element name="numbers" type="tns:ArrayType" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="FindMedianRequestType">
+    	<sequence>
+    		<element name="numbers" type="tns:ArrayType" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="FindModeRequestType">
+    	<sequence>
+    		<element name="numbers" type="tns:ArrayType" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+</schema>

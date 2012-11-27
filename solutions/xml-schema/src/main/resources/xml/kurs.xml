@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Kurs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../xsd/kurs.xsd">
+    <Titel>Java Swing</Titel>
+	<Modul Typ="notwendig">
+		<Ueberschrift>Einleitung</Ueberschrift>
+	</Modul>
+	<Modul Typ="notwendig" >
+		<Ueberschrift>Standardkomponenten</Ueberschrift>
+	</Modul>
+	<Modul Typ="optional">
+		<Ueberschrift>Java2D</Ueberschrift>
+	</Modul>
+	<Jahre>2005 2006 2007 2008</Jahre>
+</Kurs>

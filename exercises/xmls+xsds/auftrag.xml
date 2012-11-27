@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE auftrag SYSTEM "auftrag.dtd">
+
+<auftrag datum="16.2.2001">
+  <rechnungsadresse>
+    <name>Peter Zahltnix</name>
+    <strasse>Parkalle 13</strasse>
+    <plz>70565</plz>
+    <stadt>Stuttgart</stadt>
+  </rechnungsadresse>
+  <lieferadresse>
+    <name>Willy Bekommtnix</name>
+    <strasse>Friedensstr. 17</strasse>
+    <plz>48149</plz>
+    <stadt>Muenster</stadt>
+  </lieferadresse>
+ 
+  <produkte>
+    <produkt>
+      <bezeichnung>Nec Multisync 1500M</bezeichnung>
+      <menge>2</menge>
+      <preis>1999</preis>
+    </produkt>
+    <produkt>
+      <bezeichnung>Casio Cassiopeia 115G</bezeichnung>
+      <menge>1</menge>
+      <preis>1399</preis>
+    </produkt>
+  </produkte>
+</auftrag>
