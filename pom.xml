@@ -19,6 +19,7 @@
         <module>solutions/jaxb-annotations</module>
         <module>examples/jaxb-examples</module>
         <module>examples/jaxp-examples</module>
+        <module>examples/xpath-examples</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<cdliste>
+	<erstelldatum>14.01.2001</erstelldatum>
+	<listentitel>CD-Liste</listentitel>
+	<beschreibung>Diese CD-Liste ist Gegenstand der neuen Verwaltung. Betrachten Sie hierzu die neuen Bestimmungen, daß dies als neue Basis für die nächste Jahresabrechnung gilt.</beschreibung>
+	<cd id="65" jahr="2000">
+		<titel>Music</titel>
+		<interpret>Madonna</interpret>
+		<hersteller>BMG</hersteller>
+		<preis>19.99</preis>
+		<track id="01">
+			<titel>Music</titel>
+			<laenge>4:35</laenge>
+		</track>
+		<track id="02">
+			<titel>Impressive Instant</titel>
+			<laenge>5:10</laenge>
+		</track>
+		<track id="03">
+			<titel>Runaway Lover</titel>
+			<laenge>4:20</laenge>
+		</track>
+	</cd>
+	<cd id="215" jahr="1998">
+		<titel>The Best Of 1980-1990</titel>
+		<interpret>U2</interpret>
+		<hersteller>BMG</hersteller>
+		<preis>21.49</preis>
+		<track id="01">
+			<titel>Pride (In The Name Of Love)</titel>
+			<laenge>4:15</laenge>
+		</track>
+		<track id="02">
+			<titel>New Year's Day</titel>
+			<laenge>3:01</laenge>
+		</track>
+		<track id="03">
+			<titel>With Or Without You</titel>
+			<laenge>5:05</laenge>
+		</track>
+	</cd>
+	<cd id="78" jahr="1995">
+		<titel>Eminem</titel>
+		<interpret>Eminem</interpret>
+		<hersteller>Sony</hersteller>
+		<preis>31.49</preis>
+		<track id="01">
+			<titel>Public Service Announcement</titel>
+			<laenge>4:22</laenge>
+		</track>
+		<track id="02">
+			<titel>My Name Is</titel>
+			<laenge>2:33</laenge>
+		</track>
+	</cd>
+	<cd id="26" jahr="1988">
+		<titel>Green</titel>
+		<interpret>R.E.M</interpret>
+		<hersteller>BMG</hersteller>
+		<preis>19.49</preis>
+		<track id="01">
+			<titel>Pop Song '89</titel>
+			<laenge>4:35</laenge>
+		</track>
+		<track id="02">
+			<titel>Get Up</titel>
+			<laenge>3:25</laenge>
+		</track>
+		<track id="03">
+			<titel>You Are Everything</titel>
+			<laenge>7:25</laenge>
+		</track>
+	</cd>
+	<cd id="28" jahr="1995">
+		<titel>Ray of light</titel>
+		<interpret>Madonna</interpret>
+		<hersteller>BMG</hersteller>
+		<preis>23.49</preis>
+		<track id="01">
+			<titel>Substitute for Love</titel>
+			<laenge>4:35</laenge>
+		</track>
+		<track id="02">
+			<titel>Swim</titel>
+			<laenge>3:25</laenge>
+		</track>
+		<track id="03">
+			<titel>Ray of light</titel>
+			<laenge>5:25</laenge>
+		</track>
+	</cd>
+	<cd id="39" jahr="2000">
+		<titel>Marshall Mathers</titel>
+		<interpret>Eminem</interpret>
+		<hersteller>Sony</hersteller>
+		<preis>17.99</preis>
+		<track id="01">
+			<titel>Public Service Announcement 2000</titel>
+			<laenge>4:45</laenge>
+		</track>
+		<track id="02">
+			<titel>Kill You</titel>
+			<laenge>4:45</laenge>
+		</track>
+		<track id="03">
+			<titel>Stan</titel>
+			<laenge>5:02</laenge>
+		</track>
+	</cd>
+	<cd id="12" jahr="2000">
+		<titel>baby one more time</titel>
+		<interpret>Britney Spears</interpret>
+		<hersteller>Sony</hersteller>
+		<track id="01">
+			<titel>... Baby One More Time</titel>
+			<laenge>4:31</laenge>
+		</track>
+		<track id="02">
+			<titel>Crazy</titel>
+			<laenge>3:55</laenge>
+		</track>
+		<track id="03">
+			<titel>Sometimes</titel>
+			<laenge>4:20</laenge>
+		</track>
+	</cd>
+	<cd id="156" jahr="1998">
+		<titel>Up</titel>
+		<interpret>R.E.M</interpret>
+		<hersteller>Warner Vertrieb</hersteller>
+		<preis>24.99</preis>
+		<track id="01">
+			<titel>Airportman</titel>
+			<laenge>4:11</laenge>
+		</track>
+		<track id="02">
+			<titel>Lotus</titel>
+			<laenge>3:25</laenge>
+		</track>
+		<track id="03">
+			<titel>Suspicion</titel>
+			<laenge>4:20</laenge>
+		</track>
+	</cd>
+	<cd id="8" jahr="1995">
+		<titel>Fables Of Reconstruction-1985</titel>
+		<interpret>R.E.M</interpret>
+		<hersteller>EMI</hersteller>
+		<preis>31.09</preis>
+		<track id="01">
+			<titel>Feeling Gravity´s Pull</titel>
+			<laenge>2:22</laenge>
+		</track>
+		<track id="02">
+			<titel>Maps And Legends</titel>
+			<laenge>5:33</laenge>
+		</track>
+		<track id="03">
+			<titel>Driver 8</titel>
+			<laenge>5:03</laenge>
+		</track>
+	</cd>
+	<cd id="825" jahr="1995">
+		<titel>All That You Can't Leave Behind</titel>
+		<interpret>U2</interpret>
+		<hersteller>EMI</hersteller>
+		<preis>31.29</preis>
+		<track id="01">
+			<titel>Beautiful Day</titel>
+			<laenge>3:42</laenge>
+		</track>
+		<track id="02">
+			<titel>Stuck in a Moment You Can't Get Out Of</titel>
+			<laenge>3:15</laenge>
+		</track>
+		<track id="03">
+			<titel>Elevation</titel>
+			<laenge>5:03</laenge>
+		</track>
+	</cd>
+</cdliste>
