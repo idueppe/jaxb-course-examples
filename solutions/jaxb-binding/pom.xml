@@ -28,7 +28,8 @@
 				</executions>
 				<configuration>
 					<schemaDirectory>src/main/resources</schemaDirectory>
-					<packageName>course.freedb.domain</packageName>
+					<!--<packageName>course.freedb.domain</packageName>-->
+                    <bindingDirectory>src/main/resources</bindingDirectory>
 				</configuration>
 			</plugin>
 		</plugins>
