@@ -18,18 +18,14 @@ import javax.xml.bind.Unmarshaller;
 
 import org.junit.Test;
 
-import course.freedb.domain.Album;
-import course.freedb.domain.Dictionary;
-import course.freedb.domain.ObjectFactory;
-import course.freedb.domain.Track;
-
 public class JAXBTest {
 
 	@Test
 	public void testResource() {
 		assertNotNull(getClass().getClassLoader().getResourceAsStream("freedb.xml"));
 	}
-	
+
+    /*
 	@Test
 	public void testUnmarschallXML() {
 		try {
@@ -98,5 +94,6 @@ public class JAXBTest {
 		album.getTracks().add(track);
 		return dictionary;
 	}
+	*/
 	
 }
