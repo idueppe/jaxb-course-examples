@@ -25,7 +25,7 @@ public class JAXBTest {
 		assertNotNull(getClass().getClassLoader().getResourceAsStream("freedb.xml"));
 	}
 
-    /*
+    /*  Kommentatblock um die Test-Methoden entfernen.
 	@Test
 	public void testUnmarschallXML() {
 		try {
