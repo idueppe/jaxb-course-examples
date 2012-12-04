@@ -27,17 +27,19 @@ public class XPathTest {
     public void testXPath() throws Exception {
         XPath xpath = XPathFactory.newInstance().newXPath();
 
-        String xml = "";
-
         InputStream is = getClass().getClassLoader().getResourceAsStream("cdliste.xml");
 
 
         DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
         Document document = builder.parse(is);
 
-        Object result = xpath.evaluate("//cdliste", document, XPathConstants.NODESET);
-
-        NodeList nodeList = (NodeList) result;
+        Node node = (Node) xpath.evaluate("/child::cdliste/child::cd[4]", document, XPathConstants.NODE);
+        System.out.println(node.getNodeName());//+" "+node.getTextContent());
+        
+//        NodeList nodeList = (NodeList) xpath.evaluate("titel/following-sibling::track", node, XPathConstants.NODESET);
+        NodeList nodeList = (NodeList) xpath.evaluate("//cd[@jahr<=1997]/@jahr", document, XPathConstants.NODESET);
+//        NodeList nodeList = (NodeList) xpath.evaluate("//cd[@name='xyz']", document, XPathConstants.NODESET);
+        
         printNodeList(nodeList, 0);
     }
 
@@ -47,7 +49,7 @@ public class XPathTest {
             if (node instanceof Text) {
                 System.out.println(indent(indent)+" "+node.getTextContent());
             } else {
-                System.out.println(indent(indent) + " <" + node.getNodeName() + ">");
+                System.out.println(indent(indent) + " |" + node.getNodeName() + "|");
             }
             printNodeList(node.getChildNodes(), indent + 1);
         }
