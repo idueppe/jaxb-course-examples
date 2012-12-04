@@ -2,21 +2,20 @@
 <bindings version="2.0" xmlns="http://java.sun.com/xml/ns/jaxb"
         xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <bindings schemaLocation="dictionary.xsd">
-      <globalBindings  localScoping="toplevel"
-                       generateIsSetMethod="true"/>
+      <globalBindings generateIsSetMethod="true" />
       <schemaBindings>
           <package name="course.freedb.domain" />
       </schemaBindings>
 
       <bindings node="//xs:complexType[@name='DictionaryType']">
           <class name="Dictionary"/>
-          <bindings node=".//xs:element[@name='album']">
+          <bindings node="./xs:sequence/xs:element[@name='album']">
               <property name="albums" />
           </bindings>
       </bindings>
       <bindings node="//xs:complexType[@name='AlbumType']">
           <class name="Album"/>
-          <bindings node=".//xs:element[@name='track']">
+          <bindings node="./xs:sequence/xs:element[@name='track']">
               <property name="tracks" />
           </bindings>
       </bindings>
