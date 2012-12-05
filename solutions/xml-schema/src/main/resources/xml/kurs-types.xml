@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<course:Kurs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:course="http://www.crowdcode.de/schema/kurs"
+	xmlns:types="http://www.crowdcode.de/schema/types"
+	xsi:schemaLocation="http://www.crowdcode.de/schema/kurs ../xsd/kurs-elements.xsd">
+	<types:Titel>Java Swing</types:Titel>
+	<Modul Typ="notwendig" xmlns="http://www.crowdcode.de/schema/types">
+		<Ueberschrift>Einleitung</Ueberschrift>
+	</Modul>
+	<c:Modul Typ="notwendig" xmlns:c="http://www.crowdcode.de/schema/types">
+		<c:Ueberschrift>Standardkomponenten</c:Ueberschrift>
+	</c:Modul>
+	<types:Modul Typ="optional" >
+		<types:Ueberschrift>Java2D</types:Ueberschrift>
+	</types:Modul>
+</course:Kurs>

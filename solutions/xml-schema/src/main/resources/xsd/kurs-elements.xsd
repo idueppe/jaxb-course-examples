@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://www.crowdcode.de/schema/kurs" 
+	targetNamespace="http://www.crowdcode.de/schema/kurs"
+	xmlns:type="http://www.crowdcode.de/schema/types"
+	elementFormDefault="qualified">
+	
+	<xs:import 
+		namespace="http://www.crowdcode.de/schema/types" 
+		schemaLocation="kurs-types.xsd"/>
+	
+	<xs:element name="Kurs" type="type:KursType" />
+	<xs:element name="Modul" type="type:ModulType" />
+</xs:schema>

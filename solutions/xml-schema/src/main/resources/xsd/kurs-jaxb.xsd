@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://www.crowdcode.de/schema/kurs-any" targetNamespace="http://www.crowdcode.de/schema/kurs-any"
+	elementFormDefault="qualified" jaxb:version="2.0"
+	xmlns:jaxb="http://java.sun.com/xml/ns/jaxb">
+	<xs:annotation>
+		<xs:appinfo>
+			<jaxb:bindings>
+				<jaxb:globalBindings generateIsSetMethod="true" collectionType="java.util.Vector">
+					<jaxb:serializable uid="-1" />
+				</jaxb:globalBindings>
+			</jaxb:bindings>
+		</xs:appinfo>
+	</xs:annotation>
+	<xs:element name="Kurs" type="tns:KursType" />
+	<xs:complexType name="KursType">
+		<xs:sequence>
+			<xs:element name="Titel" type="xs:string" />
+			<xs:element name="Modul" type="tns:ModulType" maxOccurs="unbounded" />
+			<xs:any minOccurs="0" maxOccurs="1" namespace="##other"
+				processContents="lax" />
+
+			<!-- <xs:element name="attachments" minOccurs="0" maxOccurs="1"> -->
+			<!-- <xs:complexType> -->
+			<!-- <xs:sequence> -->
+			<!-- <xs:any minOccurs="0" maxOccurs="1" processContents="skip"/> -->
+			<!-- </xs:sequence> -->
+			<!-- </xs:complexType> -->
+			<!-- </xs:element> -->
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ModulType">
+
+		<xs:sequence>
+			<xs:element name="Ueberschrift" type="xs:string" />
+		</xs:sequence>
+		<xs:attribute name="Typ" type="xs:string" />
+	</xs:complexType>
+	<xs:simpleType name="zahlList">
+		<xs:list itemType="xs:int" />
+	</xs:simpleType>
+</xs:schema>

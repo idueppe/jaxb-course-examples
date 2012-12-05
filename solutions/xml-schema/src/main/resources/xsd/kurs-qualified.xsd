@@ -2,7 +2,8 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xmlns:tns="http://www.crowdcode.de/schema/kurs" 
 	targetNamespace="http://www.crowdcode.de/schema/kurs"
-	elementFormDefault="qualified">
+	elementFormDefault="unqualified"
+	attributeFormDefault="unqualified">
 	<xs:element name="Kurs" type="tns:KursType" />
 	<xs:element name="Modul" type="tns:ModulType" />
 	

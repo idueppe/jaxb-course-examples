@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
-	<xs:element name="Kurs" type="KursType"/>
-
+<xs:schema 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://www.crowdcode.de/schema/types"
+	targetNamespace="http://www.crowdcode.de/schema/types"
+	elementFormDefault="qualified">
 	<xs:complexType name="KursType">
 		<xs:sequence>
 			<xs:element name="Titel" type="xs:string"/>
-			<xs:element name="Modul" type="ModulType" maxOccurs="unbounded"/>
+			<xs:element name="Modul" type="tns:ModulType" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:complexType>
-	
 	<xs:complexType name="ModulType">
 		<xs:sequence>
 			<xs:element name="Ueberschrift" type="xs:string"/>
 		</xs:sequence>
-		<xs:attribute name="Typ" type="TypeType"/>
+		<xs:attribute name="Typ" type="xs:string"/>
 	</xs:complexType>
-	
+
 	<xs:simpleType name="TypeType">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="notwendig"/>
@@ -24,7 +24,7 @@
 		</xs:restriction>
 	</xs:simpleType>
 	
-<!-- 	<xs:simpleType name="zahlList" > -->
-<!-- 		<xs:list itemType="xs:int"/> -->
-<!-- 	</xs:simpleType> -->
+	<xs:simpleType name="zahlList" >
+		<xs:list itemType="xs:int"/>
+	</xs:simpleType>
 </xs:schema>
